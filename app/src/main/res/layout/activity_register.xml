@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="5dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24/7 Health CareApp"
+        android:textSize="24sp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/textview"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET'S Register"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview"
+        android:textStyle="bold"
+        android:id="@+id/textview2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:hint="UserName"
+        android:drawableLeft="@drawable/ic_user"
+        android:id="@+id/editTextRegisterUserName"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:textColor="#D8131212"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@drawable/ic_user"
+        android:background="@drawable/inputs_design"
+        android:layout_marginStart="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRegisterUserName"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:id="@+id/editTextRegisterEmail"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:textColor="#D8131212"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@drawable/ic_email"
+        android:background="@drawable/inputs_design"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editTextRegisterEmail"
+        android:hint="Password"
+        android:layout_toStartOf="@drawable/ic_password"
+        android:background="@drawable/inputs_design"
+        android:inputType="numberPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:id="@+id/editTextRegisterPassword"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:textColor="#D8040303"
+        android:layout_marginStart="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editTextRegisterPassword"
+        android:hint="Confirm Password"
+        android:layout_toStartOf="@drawable/ic_password"
+        android:background="@drawable/inputs_design"
+        android:inputType="numberPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:id="@+id/editTextRegisterPassword2"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:textColor="#D8040303"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_below="@id/editTextRegisterPassword2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/ButtonRegister"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have Account"
+        android:layout_below="@+id/ButtonRegister"
+        android:id="@+id/textviewRegisteringUser"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inputs_design"/>
+
+</RelativeLayout>
