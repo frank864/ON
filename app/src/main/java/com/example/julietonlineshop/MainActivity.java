@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                             .setPositiveButton("Visit", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Intent websiteIntent = new Intent(MainActivity.this, WebsiteActivity.class);
+                                    Intent websiteIntent = new Intent(MainActivity.this, SocialGroupActivity.class);
                                     startActivity(websiteIntent);
                                 }
                             }).create().show();
